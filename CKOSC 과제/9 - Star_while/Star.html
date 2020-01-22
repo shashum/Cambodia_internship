@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Star</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <script>
+        function s1() {
+            var i = Number(document.getElementById("qty").value);
+            var j = 0;
+            var star = '';
+            while (j < i) {
+                k = 0;
+                while (k <= j) {
+                    star += '*';
+                    k++;
+                }
+                star += '\n';
+                document.getElementById("st1").innerHTML = star;
+                j++;
+            }
+        }
+
+        function s2() {
+            var i = Number(document.getElementById("qty").value);
+            var star = '';
+            var j = i;
+            while (j > 0) {
+                var x = 0;
+                var y = j;
+                var k = 1;
+                while (k < j) {
+                    star += '.';
+                    k++;
+                }
+                while (x <= (i - j)) {
+                    star += '*';
+                    x++;
+                }
+                while (y < i) {
+                    star += '*';
+                    y++;
+                }
+                star += '\n';
+                j--;
+            }
+            document.getElementById("st1").innerHTML = star;
+
+        }
+
+        function s3() {
+            var i = Number(document.getElementById("qty").value);
+            var star = '';
+            var j = 0;
+            while (j < ((i + 1) / 2)) {
+                k = 0;
+                while (k < j) {
+                    star += '..';
+                    k++;
+                }
+                star += '*'
+                star += '\n';
+                document.getElementById("st1").innerHTML = star;
+                j++;
+            }
+            var j = (i + 1) / 2 - 1
+            while (j > 0) {
+                k = 1;
+                while (k < j) {
+                    star += '..';
+                    k++;
+                }
+                star += '*'
+                star += '\n';
+                document.getElementById("st1").innerHTML = star;
+                j--;
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Star</h1>
+
+        <h5>Input number to generate the star: <input type="text" id="qty"></h5>
+        <button class="btn btn-sm btn-secondary" onclick="s1()">Star 1</button> <button class="btn btn-sm btn-secondary" onclick="s2()">Star 2</button> <button class="btn btn-sm btn-secondary" onclick="s3()"> Star 3</button>
+
+        <pre id="st1"></pre>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper.js"></script>
+</body>
+
+</html>

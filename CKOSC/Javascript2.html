@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script>
+        // var name = "kim" + "sor"
+        // console.log(name)
+        // var x = 1;
+        // alert(name)
+
+        // x = "a";
+        // console.log("a")
+        // console.log("a")
+        // alert(x)
+
+        // var b = new Array();
+        // b[0] = 1;
+        // b[1] = 'vol';
+        // b[2] = false; // not recommend
+        // console.log(b[0])
+        // console.log(b[1])
+        // console.log(b[2])
+
+        var f_name = "brown"
+        var l_name = "bob"
+
+        var score = new Array(); //배열은 모든 형식을 지원하지만 동일한 목적(데이터 타입)을 가질 때만 사용하는 것이 권장
+        score[0] = 100;
+        score[1] = 200;
+
+        /* Kim / male / math: 99 / physic : 100 / eng : 80 */
+        var name = "Kim"
+        var gender = "male"
+        var score = new Array();
+        score[0] = 99;
+        score[1] = 100;
+        score[2] = 80;
+
+        var person = new Object();
+        person.name = name;
+        person.gender = gender;
+        person.score = score;
+
+        var person2 = new Object();
+        person2.name = "Seo";
+        person2.gender = "female";
+        person2.score = new Array;
+        person2.score[0] = 100;
+        person2.score[1] = 90;
+        person2.score[2] = 98;
+
+        var person3 = {
+            name: 'park',
+            gender: "male",
+            score: [100, 90, 98]
+        }
+
+        var info = person2.name + " " + person2.gender + " " + person2.score[1];
+        document.write(info);
+        var info2 = "<p class='text-danger'>" + person3.name + " " + person3.gender + " " + person3.score[1];
+        document.write(info2);
+
+        document.getElementById("result").innerHTML = "<tr>" +
+            "<td>" + person2.name + "</td>" +
+            "<td>" + person2.gender + "</td>" +
+            "</tr>"
+        console.log(Object());
+        console.log(person2.score[2])
+        console.log(person3)
+    </script>
+</head>
+
+<body>
+
+    <table class="table">
+        <thead>
+            <th>Name</th>
+            <th>Gender</th>
+        </thead>
+        <tbody id="result">
+
+        </tbody>
+    </table>
+    <script>
+        document.getElementById("result").innerHTML = "<tr>" +
+            "<td>" + person2.name + "</td>" +
+            "<td>" + person2.gender + "</td>" +
+            "</tr>";
+    </script>
+    <script src="js/popper.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>

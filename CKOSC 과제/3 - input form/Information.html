@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">       
+        <title>Information</title>
+    <style>
+        body{
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        fieldset{
+            background-color: rgb(241, 241, 241);
+            transition: all ease 0.1s;
+            border-radius: 10px;
+        }
+        fieldset:hover{
+            box-shadow:6px 6px 6px 6px rgba(32,33,36,0.28);
+            border-color:rgba(223,225,229,0);
+            transform: scaleX(1.01) scaleY(1.006);
+        }
+        button:hover{
+            box-shadow:3px 3px 3px 3px rgba(32,33,36,0.28);
+            border-color:rgba(223,225,229,0);
+            transform: scaleX(1.01) scaleY(1.006);
+        }
+        img{
+            width: 20%;
+            height: 90px;
+        }
+        p{
+            font-weight: bold;
+        }
+        .myform{
+            float: left;
+            width: 26%;
+            margin-left: 5%;
+        }
+        button{
+            width:90px;
+            height:30pt; 
+            border-radius: 20px; 
+            outline: none;
+            border:none;
+            background-color: rgb(125, 255, 113);
+            font: bold 20px/25px Arial, sans-serif;
+            margin: 10px;
+            font-size: 40px;
+            padding: 0 20px;
+            text-align: center;
+            text-decoration: none;
+            text-shadow: 1px 1px 1px rgba(255,255,255,.22);
+            font: bold 12px/25px Arial, sans-serif;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            border-radius: 30px;
+            -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.29), inset 1px 1px 1px rgba(255,255,255,.44);
+            -moz-box-shadow: 1px 1px 1px rgba(0,0,0,.29), inset 1px 1px 1px rgba(255,255,255,.44);
+            box-shadow: 1px 1px 1px rgba(0,0,0,.29), inset 1px 1px 1px rgba(255,255,255,.44);
+            -webkit-transition: all 0.15s ease;
+            -moz-transition: all 0.15s ease;
+            -o-transition: all 0.15s ease;
+            -ms-transition: all 0.15s ease;
+            transition: all 0.15s ease;
+            color: #3e5706;
+            background: -webkit-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%); 
+        }
+        button:active{
+            -webkit-box-shadow: 0px 2px 0px ;
+            -moz-box-shadow: 0px 2px 0px ;
+            box-shadow: 0px 2px 0px ;
+            position:relative;
+            top:4px;
+        }
+        textarea{
+            resize: none;
+            width: 50%;
+            outline: none;
+            border-radius: 10px;
+        }
+        text{
+            width: 60%;
+        }
+        .mid_text{
+            width: 50%;
+            text-align: center; 
+            margin-left: 25%; 
+            margin-bottom: 5px;
+            font-weight:normal;
+        }
+        .mid_text>p{
+            margin-bottom: 5px;
+            margin-top: 3px;
+            font-weight: normal;
+            padding: 3px 3px 3px 3px;
+            font-size: 14px;
+        }
+        .writeform>input,select{
+            border: 1px solid black;
+            border-radius: 10px;
+            outline:none
+        }
+        input{
+            border: 1px solid rgb(145, 145, 145);
+            border-radius: 10px;
+            outline:none;
+        }
+      </style>
+    </head>
+<!-- Top Images and Title -->
+    </body>
+        <div>
+            <img src="ckosc.png" style="float: left;margin-top: 1%;">
+            <img src="cbnu.jpg" style="float: right; height: 150px; width: 150px;">
+            <br>
+            <div class="mid_text">
+            <h1>WEB Training Program</h1>
+            <p>#56D1, St.230 Corner 257, Sangkat Boeng Salang, Khan Toul Kork, Phnom Penh</p>
+            <p>Tel: (855) 10 966 475 / (855) 15 888 804</p>
+            <p>Email: info.ckosc@gmail.com</p>
+        </div>
+        </div>
+<!-- Student Information -->
+            <fieldset style="margin-top: 1%;border: 2px solid rgb(81, 156, 255)">
+                <legend style="background-color: rgb(81, 156, 255); color:white;border: 2px solid rgb(81, 156, 255)">Student Information</legend>
+                <div style='display:inline;'>
+                    <div class="myform">
+                        <p>Student ID:</p>
+                        <p>Full Name<sup style="color: red;">*</sup>: </p>
+                        <p>Gender:</p>
+                        <p>Date Of Birth:</p>
+                        <p>Place Of Birth:</p>
+                        <p>Permanent Address:</p>
+                        <br>
+                        <p>Contact: </p>
+                        <pre><sup style="color: red;">*</sup> is neccessary</pre>
+                </div>
+                    
+                <div class="writeform">
+                <p><input type="text" placeholder="EX)2018000000"></p>
+                <p><input type="text" placeholder="Last Name"><input type="text" placeholder="First Name" style="margin-left: 1%;"></p>
+                <p><label><input type="radio" name="gender">Male</label> <label><input type="radio" name="gender">Female</label>
+                    <span style="margin-left: 10%;">Department: 
+                        <Select>
+                            <option>Select Department</option>
+                            <option>Management Information System</option>
+                            <option>Computer Engineering</option>
+                            <option>Economy Engineering</option>
+                            <option>Social Engineering</option>
+                            <option>Business Administration</option>
+                            <option>Mathmatics</option>
+                            <option>Physics</option>
+                        </Select></span></p>
+                    <p><input type="text" placeholder="dd/mm/yyyy"></p>
+                    <p><input type="text" placeholder="Place Of Birth"></p>
+                    <p><textarea placeholder="Current Address" style="height: 40px;"></textarea></p>
+                    <p>Phone: &nbsp;<input type="text" placeholder="Phone"style="margin-left: 3%;">
+                        <span style="margin-left: 5%;">Email:<sup style="color: red;">*</sup>: <input type="email" placeholder="Email" style="margin-left: 3%;"></span></p>
+                    </div>
+            </fieldset>
+<!-- Parents Information -->
+            <div style="margin-top: 2%; ">
+                <fieldset style="border: 2px solid rgb(81, 156, 255); ">
+                    <legend><b>Parents Information</b></legend>
+    
+                    <div style='display:inline;'>
+                        <div class="myform">
+                            <p>Father Name:</p>
+                            <p>Phone:</p>
+                            <p>Mother Name:</p>
+                            <p>Phone:</p>
+                            <p>Parents' Address:</p>
+                            <br>
+                            <p>Complete Form Issuer Contact :</p>
+                            <p>Apply Form Issuer Contact :</p>
+                        </div>
+
+                        <div>
+                        <p><input type="text" ></p>
+                        <p><input type="text" placeholder="Phone"> <span style="margin-left: 3%;">Job:</span><input type="text" placeholder="Job" style="margin-left: 1%;"></p>
+                        <p><input type="text" ></p>
+                        <p><input type="text" placeholder="Phone"> <span style="margin-left: 3%;">Job:</span><input type="text" placeholder="Job" style="margin-left: 1%;"></p>
+                        <p><textarea placeholder="Home Number, Street, Sangkat, Khan, City/Province" style="height: 40px;"></textarea></p>
+                        <p style="margin-top: 0cm;">010  966  475</p>
+                        <p>015  888  804</p>
+                    </div>
+                    <br>
+                    <center>
+               <button onclick="confirm('Will you update?')">Update</button>
+               <button style="margin-left: 1%;" onclick="window.location.reload()">Reset</button></center>
+                </fieldset>
+                <center><p>Copyright&copy;CKOSC 2019 All rights reserved</p></center>
+        </div>
+    </body>
+</html>

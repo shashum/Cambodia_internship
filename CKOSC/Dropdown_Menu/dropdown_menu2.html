@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #nav{
+                width: 100%;
+                height: auto;
+                display: inline-block;
+            }
+            li a {
+            text-decoration: none;
+            color: #fff;
+            }
+
+            ul {
+                margin: 0;
+                padding-left: 0;
+                width: 100%;
+            }
+
+            li {
+                color: #fff;
+                background: darkorange;
+                display: block;
+                float: left;
+                padding: 15px;
+                position: relative;
+            }
+
+            ul li .dropdown {
+                position: absolute;
+                display: none;
+            }
+
+            ul li:hover > ul,
+            ul li .dropdown:focus {
+                display: block;
+                padding-top: 15px;
+            }
+
+            ul li .dropdown li {
+                width: 100px;
+                background-color: aqua;
+
+            }
+        </style>
+    </head>
+    <body>
+    <div id="nav">
+        <ul>
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a>
+                <ul class="dropdown">
+                    <li><a href="#">Sub-1</a></li>
+                    <li><a href="#">Sub-2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Three</a></li>
+        </ul>
+    </div>
+    </body>
+</html>

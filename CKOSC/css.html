@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /*internal*/
+        
+        h1 {
+            color: rgb(116, 129, 96);
+            font-size: 50px;
+            font-style: oblique;
+            text-align: center;
+            border: 1px dashed black;
+        }
+        
+        span {
+            text-align: center;
+            /*inline 요소는 공간이 그 문자 자체만 차지하므로 적용되지 않음*/
+            color: rgb(81, 158, 158);
+        }
+        
+        .mystyle {
+            color: indigo;
+            text-align: left;
+            margin-left: 300px;
+            border: none;
+        }
+        
+        #myid {
+            background-color: teal;
+        }
+        
+        * {
+            text-shadow: blueviolet;
+        }
+        
+        div>span {
+            /* descendant seloctor // one level only*/
+            color: blue;
+        }
+        
+        div span {
+            /* descendant seloctor // any level*/
+            color: brown;
+        }
+        
+        .header {
+            /* color: white;
+                background-image: url('img/페페 슬픔.jpg');
+                background-attachment:fixed;
+                background-size: 200px 200px;
+                height: 800px;
+                background-repeat: no-repeat; */
+            text-decoration: underline dashed;
+            font-size: 50px;
+            font-family: kg;
+        }
+        
+        @font-face {
+            font-family: kg;
+            src: url('font/김구.ttf');
+        }
+        
+        .header:hover {
+            background-image: url('img/페페 슬픔.jpg');
+            text-transform: capitalize;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 600px;
+            text-align: center;
+        }
+        /* a:active{
+                color:black;
+                font-size: 40px;
+            } */
+        
+        p {
+            font-family: kg;
+            font-size: 30px;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        a {
+            font-family: kg;
+            text-decoration: none;
+            font-size: 40px;
+        }
+        
+        .mymenu .mymenu_item {
+            display: block;
+            float: left;
+            margin-left: 3%;
+        }
+        
+        .mymenu .mymenu_item a:hover {
+            color: chocolate;
+        }
+        
+        .sub_menu {
+            display: none;
+            font-size: 30px;
+        }
+        
+        .mymenu_item:hover .sub_menu {
+            display: block;
+            color: black;
+        }
+        
+        .sub_menu_item {
+            font-size: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/out.css">
+</head>
+
+<body>
+    <h1>ABCDEFGHIJKLMNOP</h1>
+
+    <span style="color: grey;font-size: 30px;">inline</span>
+    <!--inline-->
+    <p>External Style Sheet</p>
+
+
+    <h1 class="mystyle">1</h1>
+    <h1>2</h1>
+    <h1 class="mystyle">3</h1>
+    <h1>4</h1>
+
+    <div id="myid">
+        <fieldset>
+            <legend>니인생 레전드</legend>
+            뚜루뚜루루나뚜루 id태그
+        </fieldset>
+        <span>요호호호호</span>
+    </div>
+    <div>
+        <p>
+            <p>디스디의ㅡ이ㅢ</p>
+        </p>
+    </div>
+
+    <!-- <h2 class="header">호버, 폰트</h2> -->
+    <!-- <a href="#">빠라빠라랄빨라라</a>
+        <p>다람쥐 헌 쳇바퀴 타고파</p> -->
+
+    <ul class="mymenu">
+        <li class="mymenu_item"><a href="#">학과 소개</a></li>
+        <li class="mymenu_item"><a href="#" class="dropdown">교수진</a>
+            <ul class="sub_menu">
+                <li><a href="#" class="sub_menu_item">교수진</a></li>
+                <li><a href="#" class="sub_menu_item">명예교수진</a></li>
+            </ul>
+        </li>
+        <li class="mymenu_item"><a href="#">대학원</a></li>
+        <li class="mymenu_item"><a href="#">으헤ㅅ</a></li>
+    </ul>
+</body>
+
+</html>

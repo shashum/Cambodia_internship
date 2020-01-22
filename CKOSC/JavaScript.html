@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <script>
+        function updateData() {
+            //comment
+            /*com
+            men
+            t*/
+            //document => body
+
+            document.getElementById('result1').innerHTML = document.getElementById('name1').value;
+
+        }
+    </script>
+
+    <script src="js/updateData2.js"></script>
+    <script src="js/calculate.js"></script>
+
+</head>
+
+<body>
+    <br><br>
+    <!-- button onclick -->
+    <!-- <div class="container">
+        <button onclick="alert('clickckckck')">click me!</button>
+        <button onclick='alert("clicked!")'>click me?</button>
+    </div> -->
+
+    <br><br>
+
+    <!-- button onlick -->
+    <!-- <div class="container">
+        <div class="form-group">
+            <label>Name: </label>
+            <input type="text" id="name" class="form-contol">
+        </div>
+        <button class="btn btn-primary" onclick="document.getElementById('result').innerHTML=document.getElementById('name').value">update</button>
+        <br>
+        <p id="result"></p>
+    </div> -->
+
+
+    <!-- script onclick -->
+    <!-- <div class="container">
+        <div class="form-group">
+            <label>Name: </label>
+            <input type="text" id="name1" class="form-contol">
+        </div>
+        <button class="btn btn-primary" onclick="updateData()">update</button>
+        <br>
+        <p id="result1"></p>
+    </div> -->
+
+
+    <!-- script onkeydown -->
+    <div class="container">
+        <div class="form-group">
+            <label>Name: </label>
+            <input type="text" id="name2" class="form-contol" onkeydown="updateData2('blue','2px solid green')" onmouseover="updateData2('red', '2px solid black')" onmouseout="updateData2('violet', '2px dashed violet')">
+        </div>
+        <br>
+        <p id="result2"></p>
+    </div>
+
+    <!-- calculate -->
+    <div class="container">
+        <div class="form-group">
+            <label>A: </label>
+            <input type="text" id="num1" class="form-contol">
+        </div>
+
+        <div class="form-group">
+            <label>B: </label>
+            <input type="text" id="num2" class="form-contol">
+        </div>
+        <input type="submit" class="btn btn-secondary" value="calculate" onclick="calculate()">
+        <br>
+        <span>Answer: </span> <span id="sum"></span>
+    </div>
+
+
+
+
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</body>
+
+
+</html>

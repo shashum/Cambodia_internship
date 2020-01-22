@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Fee</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="fee.js"></script>
+    <style>
+        .box2 {
+            width: 50%;
+        }
+        
+        .my {
+            float: left;
+            width: 50%;
+            text-align: center;
+            color: white;
+            font-weight: 500;
+            font-size: 20px;
+            vertical-align: middle;
+        }
+        
+        div {
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="my">
+            <div style="background-color: rgb(137, 216, 100);">Internet Payment</div>
+            <div style="background-color: rgb(32, 209, 200);float: left;width: 50%;">Start at : <span id="ch">00</span>:<span id="cm">00</span></div>
+            <div style="background-color: rgb(247, 82, 82);float: left;width: 50%;">Stop at : <span id="sh">00</span>:<span id="sm">00</span></div>
+            <div style="background-color: rgb(231, 87, 31);float: left;width: 50%;" id="min">0 Minute</div>
+            <div style="background-color: rgb(119, 118, 118);float: left;width: 50%;"><span id="riel">0</span> Riels</div>
+            <div style="background-color: rgb(137, 137, 240);float: left;width: 100%;">
+                <input type="button" class="btn btn-primary" value="start" id="Button" onclick="check()"></input>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper.js"></script>
+</body>
+
+</html>

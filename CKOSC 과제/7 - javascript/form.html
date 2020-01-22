@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <script src="form.js"></script>
+    <style>
+        tbody {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 order-md-2 mb-4">
+            </div>
+            <div class="col-md-8 order-md-1">
+                <h1 class="mb-3">Employee Form</h1>
+                <div class="mb-3">
+                    <label>Name:</label>
+                    <input type="text" class="form-control " id="name" placeholder="Enter Name">
+                </div>
+                <div class="mb-3">
+                    <label>Gender:</label>
+                    <input type="text" class="form-control " id="gender" placeholder="Enter Gender">
+                </div>
+                <div class="mb-3">
+                    <label>Hour:</label>
+                    <input type="number" class="form-control " id="hour" placeholder="Enter hour">
+                </div>
+                <div class="mb-3">
+                    <label>Rate:</label>
+                    <input type="number" class="form-control " id="rate" placeholder="Enter Rate">
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-primary" onclick="getResult()">Submit</button>
+        <br>
+        <table class="table">
+            <thead>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Salary</th>
+            </thead>
+
+            <tbody id="result">
+            </tbody>
+    </div>
+
+    </table>
+    <script>
+    </script>
+
+    <script src="js/jquery-3.4.1.min.js "></script>
+    <script src="js/popper.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+</body>
+
+</html>

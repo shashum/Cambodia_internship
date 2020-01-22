@@ -1,0 +1,58 @@
+div {
+    height: 50px;
+    background-color: rgb(154, 226, 81);
+    padding: 0px 0;
+}
+
+ul {
+    list-style-type: none;
+    width: 100%;
+    padding-left: 0px;
+}
+
+ul li {
+    text-align: center;
+    background-color: teal;
+    display: block;
+    width: 160px;
+    float: left;
+    padding: 15px 0px;
+    border-width: 0 1px 0 0;
+    border-color: white;
+    border-style: solid;
+}
+
+ul li a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+ul li:hover {
+    background-color: steelblue;
+    font-weight: bold;
+    text-shadow: white;
+}
+
+.searchbox {
+    float: right;
+    margin-right: 20px;
+    top: 0;
+}
+
+.searchbox input[type='text'] {
+    border-radius: 20px;
+    padding-left: 28px;
+    width: 200px;
+    height: 60%;
+    margin-top: 5px;
+}
+
+.searchbox input[type='button'] {
+    display: block;
+    float: right;
+    font-size: 20px;
+    margin-left: 10px;
+    border-radius: 20px;
+    margin-top: 5px;
+}

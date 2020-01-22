@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .hidden {
+            display: none;
+            list-style-type: armenian;
+            background-color: aqua;
+        }
+        
+        .show:hover+.hidden {
+            display: block;
+        }
+        
+        span {
+            /*inline 요소를 움직일 때 position:relative;*/
+            /* position: relative;     
+                left: 100px;
+                top: 100px; */
+            /* position: fixed;
+            top: 100px;
+            z-index: -1;
+            background-color: aquamarine; */
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+        
+        #mtp {
+            position: fixed;
+            float: right;
+            right: 10px;
+            bottom: 10px;
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            width: 60px;
+            border-radius: 50%;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="show">Hover to Display</h1>
+    <!-- <ul class="hidden">
+        <li>Hidden</li>
+        <li>Text</li>
+        <li>Is</li>
+        <li>Showing</li>
+    </ul> -->
+
+    <span id="top">ABCDEFG</span>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+    <p>TTTEXT</p>
+
+    <a href="#top" id="mtp" style="font-size: 50px;"><i class="fa fa-amazon"></i></a>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <!-- <form action="서버에 주소 전송" method="get/post">
+        </form> -->
+        <!-- value로 기본값 지정 가능//checkbox 등에는 value로 기본값 지정 불가 -->
+        <form action="" method="">
+            <div>First Name: </div>
+            <input type="text" id="first_name" value="오호호" placeholder="성">
+
+            <div>Last Name: </div>
+            <input type="text" id="last_name" placeholder="이름">
+            <br>
+            <div>
+                <span>취미: </span>
+                <input type="checkbox"id="Hobby"> Football
+                <input type="checkbox"id="Hobby" disabled> Bascketball
+                <input type="checkbox"id="Hobby" checked> Baseball
+            </div>  
+            <br>
+            <div>
+                성별:
+                <input type="radio" name="gender" id="gender">남
+                <input type="radio" name="gender" id="gender">여
+            </div> 
+            <br>
+            <div>
+                <span>학과: </span>
+                <select id="department">
+                    <option value="MIS">경정</option>
+                    <option value="CS">컴공</option>
+                    <option selected value="EE">환공</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <span>여러줄 쓰는거: </span>
+                <textarea style="resize: none;"></textarea>
+            </div>
+
+            <input type="submit" value="신청하기">
+            <input type="button" value="취소" onclick="alert('이요호호홓')">
+            <br>
+            비번 입력 <input type="password">
+            <input type="email">
+        </form>
+
+
+        <iframe src="my.html" width="50%" height="300px"></iframe>
+        <iframe src="https://coupang.co.kr" width="70%" height="300px" style="text-align: center;"></iframe>
+    </body>
+</html>
